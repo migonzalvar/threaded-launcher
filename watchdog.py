@@ -7,6 +7,7 @@ import time
 
 
 def watchdog():
+    """Launch all the scripts in a folder and wait until completion."""
     scripts_processes = []
     base_dir = os.path.join(os.path.dirname(__file__), 'modules')
 
