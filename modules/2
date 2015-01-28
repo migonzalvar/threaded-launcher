@@ -1,0 +1,6 @@
+#!/bin/env python
+import time, random
+
+print('-- Start process 2')
+time.sleep(random.randint(1, 5))
+print('-- Finish process 2')
