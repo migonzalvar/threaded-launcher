@@ -26,6 +26,9 @@ def watchdog():
             if ret_code is not None:
                 scripts_processes.remove(process)
                 print('** {} finished with code {}'.format(process, ret_code))
+                print('** {} start output'.format(process))
+                print(process.stdout.read())
+                print('** {} end output'.format(process))
             else:
                 print('** {} Still running'.format(process))
 
